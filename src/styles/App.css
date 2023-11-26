@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+}
+
+header {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid gainsboro;
+  align-items: center;
+  justify-content: space-between;
+
+  animation: header-scroll;
+  animation-timeline: scroll();
+  animation-fill-mode: both;
+  animation-range: 0px 120px;
+}
+
+header div {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+}
+
+header button {
+  background-color: transparent;
+  border: 1px solid gainsboro;
+  border-radius: 6px;
+  padding: 6px;
+  display: flex;
+  place-content: center;
+
+}
+
+header a {
+  color: black;
+  border: 1px solid gainsboro;
+  border-radius: 6px;
+  padding: 6px;
+  display: flex;
+  place-content: center;
+}
+
+header a:hover {
+  color: white;
+  background-color: black;
+}
+
+header button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid gainsboro;
+}
+
+header input {
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 22px;
+  border: none;
+  border: 1px solid gainsboro;
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: 0;
+  column-gap: 8px;
+  row-gap: 8px;
+  padding: 8px 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 100%;
+}
+
+li {
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid gainsboro;
+  color: black;
+  margin: 0;
+  padding: 10px 8px;
+  box-sizing: border-box;
+}
+
+main li img {
+  height: 70%;
+  object-fit: cover;
+}
+
+li button {
+  background-color: rgb(224, 224, 224);
+}
+
+li h3 {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+li div {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+@keyframes header-scroll {
+  to {
+    background-color: rgba(255, 255, 255, 0.548);
+    padding: 12px;
+  }
+}
