@@ -17,7 +17,7 @@ export default function ProductList({ products }) {
             <img src={product.image} alt={product.title} />
             <div>
               <h3>{product.title}</h3>
-              <button onClick={() => addToCart(product)}>add to cart</button>
+              <button onClick={() => addToCart(product)} disabled={product.inCart}>{product.inCart ? 'In Cart' : 'Add to cart'}</button>
             </div>
           </li>
         ))

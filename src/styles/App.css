@@ -100,7 +100,7 @@ li {
   box-sizing: border-box;
 }
 
-main li img {
+.list li img {
   height: 70%;
   object-fit: cover;
 }
@@ -109,7 +109,11 @@ li button {
   background-color: rgb(224, 224, 224);
 }
 
-li h3 {
+li button:disabled:hover {
+  border: 1px solid red;
+}
+
+.list li h3 {
   margin: 0;
   white-space: nowrap;
   overflow: hidden;

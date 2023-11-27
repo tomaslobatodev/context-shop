@@ -6,11 +6,11 @@ import ProductsProvider from './context/products.context.jsx'
 import CartProvider from './context/cart.context.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <CartProvider>
-    <FiltersProvider>
-      <ProductsProvider>
+  <ProductsProvider>
+    <CartProvider>
+      <FiltersProvider>
         <App />
-      </ProductsProvider>
-    </FiltersProvider>
-  </CartProvider>
+      </FiltersProvider>
+    </CartProvider>
+  </ProductsProvider>
 )

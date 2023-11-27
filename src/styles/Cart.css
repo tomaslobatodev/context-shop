@@ -13,6 +13,9 @@
   overflow: auto;
   align-items: center;
   box-sizing: border-box;
+
+  animation: toggle-cart;
+  animation-duration: .3s;
 }
 
 .cart div {
@@ -59,10 +62,15 @@
 
 .cart ul li div {
   width: 70%;
-  text-overflow: clip;
-  padding: 16px;
+  text-overflow: inherit;
+  padding:0 16px ;
   height: 100%;
   box-sizing: border-box;
+}
+
+.cart ul li h4 {
+  margin: 0;
+  text-overflow: ellipsis;
 }
 
 .cart li img {
@@ -81,9 +89,20 @@
 @media screen and (max-width: 700px) {
   .cart {
     width: 95%;
+    animation: sm-toggle-cart;
+    animation-duration: .3s;
   }
 
   .cart li img {
     width: 80px;
   }
+}
+
+@keyframes sm-toggle-cart {
+  from {width: 0;}
+  to {width: 90%;}
+}
+@keyframes toggle-cart {
+  from {width: 0;}
+  to {width: 50%;}
 }
