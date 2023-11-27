@@ -9,7 +9,7 @@ export default function Cart({ setCartOpen }) {
   return (
     <aside className="cart">
       <div>
-        <h1>Cart</h1>
+        <h1>Your cart</h1>
         <button className="remove-btn" onClick={() => setCartOpen(false)}>
           <X />
         </button>
