@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { CartContext } from '../context/cart.context'
 import '../styles/Cart.css'
-import { Trash, Trash2, X } from 'lucide-react'
+import { Trash2, X } from 'lucide-react'
 
 export default function Cart({ setCartOpen }) {
   const { cart, clearCart } = useContext(CartContext)

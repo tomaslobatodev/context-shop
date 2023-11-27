@@ -37,6 +37,10 @@ header div {
   justify-content: center;
 }
 
+header input {
+  width: 60%;
+}
+
 header button {
   background-color: transparent;
   border: 1px solid gainsboro;
